@@ -38,20 +38,25 @@ const App = () => {
       // See if its strictly equal to a vowel.
       // Returns if first index is equal to a vowel return string + way
 
-      const firstVowel = () => {
-        if (eachWord[0] === 'a') {
-          return eachWord + "way"
-        } else if (eachWord[0] === 'e') {
-          return eachWord + "way"
-        } else if (eachWord[0] === 'i') {
-          return eachWord + "way"
-        } else if (eachWord[0] === 'o') {
-          return eachWord + "way"
-        } else if (eachWord[0] === 'u') {
-          return eachWord + "way"
-        }
-      } 
-      return firstVowel()
+      // const firstVowel = () => {
+      //   if (eachWord[0] === 'a') {
+      //     return eachWord + "way"
+      //   } else if (eachWord[0] === 'e') {
+      //     return eachWord + "way"
+      //   } else if (eachWord[0] === 'i') {
+      //     return eachWord + "way"
+      //   } else if (eachWord[0] === 'o') {
+      //     return eachWord + "way"
+      //   } else if (eachWord[0] === 'u') {
+      //     return eachWord + "way"
+      //   }
+      // } 
+      // return firstVowel()
+
+      if (eachWord[0] === vowelsArray[0]) {
+        return eachWord + "way"
+      }
+
 
 
       // if (eachWord[0] == eachWord.match('["a", "e", "i", "o", "u"]')) {
@@ -59,9 +64,9 @@ const App = () => {
       // }
 
 
-      if (eachWord[0] == eachWord.match(vowelsArray)){
-        return eachWord + "way"
-      }
+      // if (eachWord[0] == eachWord.match(vowelsArray)){
+      //   return eachWord + "way"
+      // }
 
       console.log(eachWord)
 
